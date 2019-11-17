@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add car in system</title>
+</head>
+<body>
+    {% include "components/navbar.html" %}
+    <h1>Add car in system</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ car_name_form_ru.as_p }}
+        {{ car_name_form_en.as_p }}
+        {{ car_form.as_p }}
+        <button type="submit">Add car</button>
+    </form>
+</body>
+</html>

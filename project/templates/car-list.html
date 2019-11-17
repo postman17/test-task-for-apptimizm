@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add car to user</title>
+</head>
+<body>
+    {% include "components/navbar.html" %}
+    <h1>Add car to user</h1>
+    <ul>
+        {% for car in object_list %}
+            <li>{% for name in car.name.all %}{{ name }}<br>{% endfor %}<br>{{ car.year }}</li>
+            <a href="{% url 'add-car-to-user' pk=car.id %}">Add to user</a>
+            <br><br>
+        {% endfor %}
+    </ul>
+</body>
+</html>

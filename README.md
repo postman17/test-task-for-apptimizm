@@ -1,5 +1,8 @@
 # test-task-for-apptimizm
 
+### Admin - login: admin@admin.ru, password: admin
+### Test user - login: test@test.ru, password: test
+
 Python
 
 Разрабатываем систему обеспечивающую работу организации по сдаче автомобилей в аренду.
